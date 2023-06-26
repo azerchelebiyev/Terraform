@@ -1,9 +1,8 @@
 resource "aws_iam_user" "Azer" {
   name = "Azer"
 
-  tags {
-    env="prod"
-    job="devops"
-
+  tags = {
+    tag-key = "DevOpsAzer"
+    environment = "dev"
   }
 }
