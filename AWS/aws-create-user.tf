@@ -1,8 +1,8 @@
-resource "aws_iam_user" "Azer" {
+resource "aws_iam_user" "my-user-01" {
   name = "Azer"
 
   tags = {
-    tag-key = "DevOpsAzer"
+    job = "DevOps"
     environment = "dev"
   }
 }
